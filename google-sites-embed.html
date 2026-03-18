@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atif Afroz - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-bg { background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.15), transparent 40%), radial-gradient(circle at bottom left, rgba(168, 85, 247, 0.15), transparent 40%), #020617; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="gradient-bg text-slate-100 min-h-screen">
+
+    <!-- Hero Section -->
+    <header class="relative border-b border-white/10 px-6 py-20 md:py-32">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="inline-block px-4 py-1 rounded-full bg-white/10 border border-white/10 text-sm mb-6">Engineer • Researcher • Hardware Enthusiast</span>
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-4">Atif Afroz</h1>
+                <p class="text-2xl text-blue-400 font-medium mb-6">VLSI & Embedded Systems Engineer</p>
+                <p class="text-lg text-slate-300 leading-relaxed max-w-2xl mb-10">
+                    Building Intelligent hardware systems at the intersection of FPGA design, Embedded electronics, IoT, and high-performance digital engineering.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl font-medium transition flex items-center gap-2">
+                        View Projects <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/atif-afroz/" target="_blank" rel="noopener noreferrer" class="glass hover:bg-white/10 px-8 py-4 rounded-2xl font-medium transition flex items-center gap-2">
+                        <i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="glass p-4 rounded-[2.5rem] shadow-2xl max-w-sm w-full">
+                    <img src="https://lh3.googleusercontent.com/d/1RCaHeM2Nm4xG2rVCjdIiHLgOVZOXJ0e7" alt="Atif Afroz" class="rounded-[2rem] w-full aspect-square object-cover border border-white/10">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-20 space-y-32">
+        
+        <!-- About & Skills -->
+        <section class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white text-slate-900 p-10 rounded-[2.5rem] shadow-xl">
+                <div class="flex items-center gap-3 mb-6">
+                    <i data-lucide="user" class="w-6 h-6"></i>
+                    <h2 class="text-3xl font-bold">About Me</h2>
+                </div>
+                <p class="text-lg leading-relaxed text-slate-700">
+                    I am an engineer with academic and implementation experience in embedded systems, IoT system design, digital hardware design, FPGA development, sensor-driven systems, and applied electronics.
+                </p>
+                <p class="mt-4 text-lg leading-relaxed text-slate-700">
+                    My work focuses on translating system ideas into practical hardware-oriented solutions through modeling, prototyping, and implementation.
+                </p>
+            </div>
+            <div class="glass p-10 rounded-[2.5rem]">
+                <div class="flex items-center gap-3 mb-8">
+                    <i data-lucide="cpu" class="w-6 h-6"></i>
+                    <h2 class="text-3xl font-bold">Technical Skills</h2>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 rounded-full bg-white/10 border border-white/10 text-sm">VLSI Design</span>
+                    <span class="px-4 py-2 rounded-full bg-white/10 border border-white/10 text-sm">FPGA Prototyping</span>
+                    <span class="px-4 py-2 rounded-full bg-white/10 border border-white/10 text-sm">Embedded Systems</span>
+                    <span class="px-4 py-2 rounded-full bg-white/10 border border-white/10 text-sm">Verilog / VHDL</span>
+                    <span class="px-4 py-2 rounded-full bg-white/10 border border-white/10 text-sm">MATLAB</span>
+                    <span class="px-4 py-2 rounded-full bg-white/10 border border-white/10 text-sm">IoT System Design</span>
+                    <span class="px-4 py-2 rounded-full bg-white/10 border border-white/10 text-sm">PCB Design</span>
+                    <span class="px-4 py-2 rounded-full bg-white/10 border border-white/10 text-sm">PIC</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <div class="flex items-center gap-3 mb-12">
+                <i data-lucide="layout-grid" class="w-6 h-6"></i>
+                <h2 class="text-4xl font-bold">Selected Projects</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="glass p-8 rounded-[2rem] hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-xl font-bold mb-4">Quantum Controlled-NOT Gate</h3>
+                    <p class="text-slate-400 leading-relaxed mb-6">Compact implementation of an all-optical two-qubit quantum CNOT gate for photonic logic.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/20">Quantum</span>
+                        <span class="text-xs px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/20">Photonics</span>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="glass p-8 rounded-[2rem] hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-xl font-bold mb-4">Solar Smart Home IoT</h3>
+                    <p class="text-slate-400 leading-relaxed mb-6">Solar-powered IoT system integrating automation, security, and health monitoring.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/20">IoT</span>
+                        <span class="text-xs px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/20">Solar</span>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="glass p-8 rounded-[2rem] hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-xl font-bold mb-4">LMS Noise Canceller</h3>
+                    <p class="text-slate-400 leading-relaxed mb-6">HDL-compatible LMS adaptive noise cancellation workflows for FPGA deployment.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/20">FPGA</span>
+                        <span class="text-xs px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/20">Verilog</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="bg-white text-slate-900 p-12 rounded-[3rem] shadow-2xl">
+            <div class="flex items-center gap-3 mb-10">
+                <i data-lucide="graduation-cap" class="w-8 h-8"></i>
+                <h2 class="text-4xl font-bold">Education</h2>
+            </div>
+            <div class="space-y-12">
+                <div class="border-l-4 border-blue-600 pl-8">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-2xl font-bold">M.Tech in VLSI and Embedded System</h3>
+                        <span class="bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-bold">2024 – 2026</span>
+                    </div>
+                    <p class="text-xl text-slate-600">IIIT Guwahati</p>
+                </div>
+                <div class="border-l-4 border-slate-200 pl-8">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-2xl font-bold text-slate-700">B.Tech in Electrical Engineering</h3>
+                        <span class="bg-slate-100 text-slate-500 px-4 py-1 rounded-full text-sm font-bold">2020 – 2024</span>
+                    </div>
+                    <p class="text-xl text-slate-500">Gurukula Kangri (Deemed to be University), Haridwar</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="text-center py-20">
+            <h2 class="text-5xl font-bold mb-6">Let's Connect</h2>
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-12">
+                I am available for research collaboration, academic discussions, industry projects, and engineering opportunities in VLSI, FPGA, embedded systems, IoT systems, and hardware product development.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="mailto:atifafroz@ieee.org" class="glass px-10 py-5 rounded-3xl text-xl font-bold hover:bg-white/10 transition">
+                    atifafroz@ieee.org
+                </a>
+                <a href="https://www.linkedin.com/in/atif-afroz/" target="_blank" rel="noopener noreferrer" class="bg-white text-slate-950 px-10 py-5 rounded-3xl text-xl font-bold hover:bg-slate-200 transition">
+                    LinkedIn Profile
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-white/10 py-10 text-center text-slate-500">
+        <p>&copy; 2024 Atif Afroz. All rights reserved.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
